@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+[![Build status](https://ci.appveyor.com/api/projects/status/uwy76m47eyu97nwn?svg=true)](https://ci.appveyor.com/project/Di-sole/ra-lifecycle-http-watches)
+# Мировые часы
+
+[GitHub Pages](https://di-sole.github.io/ra-lifecycle-http-watches/) 
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
