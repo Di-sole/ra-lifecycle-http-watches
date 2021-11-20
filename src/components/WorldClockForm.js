@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import shortid from "shortid";
 
 function WorldClockForm({ onAdd }) {
-	const [form, setForm] = useState({clockName: '', timezone: ''});
+	const [form, setForm] = useState({name: '', timezone: ''});
 
 	const handleChange = (e) => {
 		const name = e.target.name;
@@ -21,19 +21,19 @@ function WorldClockForm({ onAdd }) {
 
 		const clock = {
 			id: shortid.generate(),
-			name: form.clockName,
+			name: form.name,
 			timezone: form.timezone.slice(3)
 		}
 
 		onAdd(clock);
-		setForm({clockName: '', timezone: ''});
+		setForm({name: '', timezone: ''});
 	}
 
 	return (
 		<form className="form" onSubmit={handleSubmit}>
 			<div className="form-elem">
 				<label className="input-description" htmlFor="name">Название</label>
-				<input className="form-input" id="clockName" name="clockName" value={form.clockName} onChange={handleChange} required />
+				<input className="form-input" id="name" name="name" value={form.name} onChange={handleChange} required />
 			</div>
 			<div className="form-elem">
 				<label className="input-description" htmlFor="timezone">Временная зона</label>
